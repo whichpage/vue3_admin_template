@@ -13,6 +13,11 @@ export default defineConfig({
       customDomId: '__svg_icons_dom__'
     })
   ],
+  resolve: {
+    alias: {
+      '@': resolve(__dirname, 'src')
+    }
+  },
   server: {
     host: '0.0.0.0'
   }
