@@ -7,6 +7,7 @@ import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
 import 'virtual:svg-icons-register'
 import router from './router'
 import SvgIcon from './components/SvgIcon.vue'
+import pinia from './store'
 
 const app = createApp(App)
 
@@ -15,6 +16,7 @@ app.use(ElementPlus, {
 })
 
 app.component('SvgIcon', SvgIcon)
+app.use(pinia)
 app.use(router)
 
 app.mount('#app')
